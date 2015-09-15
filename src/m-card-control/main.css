@@ -1,0 +1,23 @@
+.m-card-control {
+	
+}
+
+.m-card-control .padding-wrap{
+	padding: 0 10px 10px;
+}
+
+.m-card-control .header-zone{
+	margin: 10px 0px;
+}
+
+.m-card-control .header-zone .filter-zone form{
+	display: inline;
+}
+
+.m-card-control .header-zone .filter-zone span{
+	padding-right: 15px;
+}
+
+.m-card-control .header-zone .J_add{
+	float: right;
+}

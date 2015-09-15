@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>demo</title>
+
+		<link rel="stylesheet" href="dist/combine.css"/>
+		<script type="text/javascript" src="dist/jquery/jquery-2.0.0.min.js"></script>
+		<script type="text/javascript" src="dist/seajs/seajs.js" charset="utf-8"></script>
+		<script type="text/javascript" src="dist/requires.js" charset="utf-8"></script>
+		<script type="text/javascript" src="dist/combine.js"></script>
+	</head>
+	<body>
+		<div class="allwrap">
+			<div class="page">
+				<div class="banner p-banner">
+					<!-- banner content -->
+					<div class="con clearfix">
+						<h1 class="float-left">hello hello<span class="fixed-btn" id="fixedBtn"></span></h1>
+						<ul class="float-left nav-wrap">
+							<li>
+								<dl>
+									<dt><span>算法服务管理</span></dt>
+									<dd><a href="serviceControl.html">算法服务列表</a></dd>
+									<dd><a href="ruleControl.html">业务规则列表</a></dd>
+									<dd><a href="templateControl.html">卡片模板管理</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><span>数据管理</span></dt>
+									<dd><a href="#">数据监控</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><span>客户端管理</span></dt>
+									<dd><a href="tabControl.html">TAB控制</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-col"></div>
+
+				<div class="main-col">
+					<div class="m-rule-control">
+						<h1 class="p-h1">规则管理</h1>
+						<div class="padding-wrap">
+							<div class="header-zone">
+								<button class="p-btn-blue J_add">新增规则</button>
+								<div class="filter-zone">
+									<span>Render Type: </span>
+									<form action="" class="J_filter-form">
+										<input type="text" size="20"/>
+										<button class="p-btn-gray">过滤</button>
+									</form>
+								</div>
+							</div>
+							<div class="table-list">
+								<form action="" class="J_table-form">
+									<table class="p-table J_serial">
+										<tr class="hd">
+											<th>id</th>
+											<th>renderType</th>
+											<th>父规则</th>
+											<th>rule</th>
+											<th>操作</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>VIDEO</td>
+											<td>0</td>
+											<td>{"paramSetting":{"nameCn":"$detail.name_cn"},"protocol":"OPEN_RULE","protocolSetting":{"openRule":"{\"appdata\":\"alivideo://search?keyword=#nameCn#&from=CameraScanFace\",\"pkg\":\"com.aliyun.video\",\"webdata\":\"\"}"},"resultMapping":{"openRule.appdata":"$appdata","openRule.pkg":"$pkg","openRule.webdata":"$webdata"}}{"paramSetting":{"globalId":"$globalId"},"protocol":"LOCAL","protocolSetting":{"globalId":"globalId"},"resultMapping":{"detail.actor":"$actor","detail.birthday":"$birthday","detail.birthplace":"$birthplace","detail.bizId":"$bizId","detail.constellation":"$constellation","detail.country":"$country","detail.graduate":"$graduate","detail.name_alias":"$nameAlias","detail.name_cn":"$nameCn","detail.opus":"$opus","detail.picurl":"$picurl","detail.title":"$nameCn","detail.description":"$achievement","detail.id":"$id"}}</td>
+											<td>
+												<span class="fix">修改</span>
+												<span class="unpublish">下架</span>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>FACE</td>
+											<td>0</td>
+											<td>{...}</td>
+											<td>
+												<span class="fix">修改</span>
+												<span class="unpublish">下架</span>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+						<script type="text/javascript">
+							APP.rule_control.main.config = {
+								action: {
+									add: "./addAndFix.html"
+								},
+								ajax: {
+									getAdd: "./addRule.html"
+								}
+							};
+
+							APP.rule_control.main.init();
+						</script>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+	</body>
+</html>

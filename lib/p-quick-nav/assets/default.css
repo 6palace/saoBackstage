@@ -1,0 +1,14 @@
+.p-quick-nav{
+	padding: 0px 10px 10px 0px;
+	margin: -1px 10px 10px;
+	border-top: 1px solid #BDBDBD;
+}
+.p-quick-nav dt{
+	font-size: 14px;
+}
+.p-quick-nav dd{
+	padding: 0 0 0 10px;
+	margin: 4px 0;
+}
+.p-quick-nav dd a.false{color: #f33}
+.p-quick-nav dd a.none{color: #999}

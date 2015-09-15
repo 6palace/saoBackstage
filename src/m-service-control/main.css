@@ -1,0 +1,61 @@
+.m-service-control {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.m-service-control .padding-wrap{
+	padding: 0 10px 10px;
+}
+.m-service-control .p-table :nth-child(1){
+	width: 100px;
+}
+
+.m-service-control .header-zone{
+	height: 20px;
+	margin: 10px 0px;
+}
+
+.m-service-control .header-zone .filter-zone form{
+	display: inline;
+}
+
+.m-service-control .header-zone .filter-zone span{
+	padding-right: 15px;
+}
+
+.m-service-control .header-zone .J_add{
+	float: right;
+}
+
+.J_popwin_service_control_add{
+	padding-bottom: 10px;
+	text-align: center;
+}
+.J_popwin_service_control_add .cate{
+	margin: 10px 0;
+}
+.J_popwin_service_control_add input{
+	vertical-align: middle;
+}
+.J_popwin_service_control_add .txt{
+	display: inline;
+	width: 300px;
+}
+.J_popwin_service_control_add .txtname{
+	width: 80px;
+	display: inline-block;
+}
+.J_popwin_service_control_add .J_json_fill_indexed .json_index{
+	margin-right: 5px;
+}
+.J_popwin_service_control_add .J_json_fill .show_json{
+	width: 300px;
+	margin: 10px 0px 0px 0px;
+}
+.J_popwin_service_control_add .protocolDetail{
+	display:none;
+}
+
+.J_popwin_service_control_add .btn-zone{
+	text-align: right;
+}

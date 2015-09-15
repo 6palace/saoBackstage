@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>demo</title>
+
+		<link rel="stylesheet" href="dist/combine.css"/>
+		<script type="text/javascript" src="dist/jquery/jquery-2.0.0.min.js"></script>
+		<script type="text/javascript" src="dist/seajs/seajs.js" charset="utf-8"></script>
+		<script type="text/javascript" src="dist/requires.js" charset="utf-8"></script>
+		<script type="text/javascript" src="dist/combine.js"></script>
+	</head>
+	<body>
+		<div class="allwrap">
+			<div class="page">
+				<div class="banner p-banner">
+					<!-- banner content -->
+					<div class="con clearfix">
+						<h1 class="float-left">hello hello<span class="fixed-btn" id="fixedBtn"></span></h1>
+						<ul class="float-left nav-wrap">
+							<li>
+								<dl>
+									<dt><span>算法服务管理</span></dt>
+									<dd><a href="serviceControl.html">算法服务列表</a></dd>
+									<dd><a href="ruleControl.html">业务规则列表</a></dd>
+									<dd><a href="templateControl.html">卡片模板管理</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><span>数据管理</span></dt>
+									<dd><a href="#">数据监控</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><span>客户端管理</span></dt>
+									<dd><a href="tabControl.html">TAB控制</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-col"></div>
+
+				<div class="main-col">
+					<div class="m-card-control">
+						<h1 class="p-h1">卡片管理</h1>
+						<div class="padding-wrap">
+							<div class="header-zone">
+								<button class="p-btn-blue J_add">上传卡片模板</button>
+								<div class="filter-zone">
+									<span>Render Type: </span>
+									<form action="" class="J_filter-form">
+										<input type="text" size="20"/>
+										<button class="p-btn-gray">过滤</button>
+									</form>
+								</div>
+							</div>
+							<div class="table-list">
+								<form action="" class="J_table-form">
+									<table class="p-table J_serial">
+										<tr class="hd">
+											<th>id</th>
+											<th>renderType</th>
+											<th>App Key</th>
+											<th>模板地址</th>
+											<th>MD5</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>VIDEO</td>
+											<td>22c4185e163ff460e9557c1be753012f</td>
+											<td>http://dtc-template.oss-cn-beijing.aliyuncs.com/22c4185e163ff460e9557c1be753012f/cd_default.html</td>
+											<td>370157c76fa9c71d2dc61ac7cb505ba1</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>FACE</td>
+											<td>22c4185e163ff460e9557c1be753012f</td>
+											<td>http://dtc-template.oss-cn-beijing.aliyuncs.com/22c4185e163ff460e9557c1be753012f/cd_default.html</td>
+											<td>370157c76fa9c71d2dc61ac7cb505ba1</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+						<script type="text/javascript">
+							APP.rule_control.main.config = {
+								action: {
+									add: "uploadCard.html"
+								},
+								ajax: {
+									getAdd: "addCard.html"
+								}
+							};
+
+							APP.rule_control.main.init();
+						</script>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+	</body>
+</html>

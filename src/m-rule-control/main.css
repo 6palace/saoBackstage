@@ -1,0 +1,55 @@
+.m-rule-control {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.m-rule-control .p-table td:nth-child(4){
+	width: 70%;
+}
+
+.m-rule-control .padding-wrap{
+	padding: 0 10px 10px;
+}
+
+.m-rule-control .header-zone{
+	margin: 10px 0px;
+}
+
+.m-rule-control .header-zone .filter-zone form{
+	display: inline;
+}
+
+.m-rule-control .header-zone .filter-zone span{
+	padding-right: 15px;
+}
+
+.m-rule-control .header-zone .J_add{
+	float: right;
+}
+
+.J_popwin_rule_control_add{
+	padding-bottom: 10px;
+	text-align: center;
+}
+.J_popwin_rule_control_add .cate{
+	margin: 10px 0;
+}
+.J_popwin_rule_control_add input{
+	vertical-align: middle;
+}
+.J_popwin_rule_control_add .txt{
+	display: inline;
+	width: 300px;
+}
+.J_popwin_rule_control_add .txtname{
+	width: 80px;
+	display: inline-block;
+}
+.J_popwin_rule_control_add .J_json_fill .show_json{
+	width: 300px;
+	margin: 10px 0px 0px 80px;
+
+}
+.J_popwin_rule_control_add .btn-zone{
+	text-align: right;
+}

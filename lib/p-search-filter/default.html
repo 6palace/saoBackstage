@@ -1,0 +1,38 @@
+<!--筛选区域栗子 @ll-->
+<!--
+	替换form里面的表单元素
+	独立表单元素一律添加 class = "discrete"
+-->
+<div class="p-search-filter">
+	<fieldset>
+		<legend>筛选</legend>
+		<div class="wrap">
+			<form action="" target="" method="get">
+				<select name="" class="discrete">
+					<option value="">选择分类</option>
+					<option value="">分类1111111111好长</option>
+				</select>
+				<select name="" class="discrete">
+					<option value="">选择好长好长分类</option>
+					<option value="">分类1111111111好长</option>
+				</select>
+				<div class="date-timer discrete">
+					从
+					<input class="start-input" type="text" value=""/>
+					至
+					<input class="end-input" type="text" value=""/>
+				</div>
+				<label for="" class="discrete">
+					<span>关键字:</span>
+					<input type="text" value=""/>
+				</label>
+				<button type="button" class="discrete">搜索</button>
+			</form>
+
+		</div>
+	</fieldset>
+</div>
+
+<script>
+	APP.p_search_filter.init();
+</script>

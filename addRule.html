@@ -1,0 +1,51 @@
+<div class="J_popwin_rule_control_add">
+	<h1 class="p-h1">新增业务规则</h1>
+	<form action="">
+		<div class="cate"><label for=""><span class="txtname">RenderType:</span><input type="text" name="RenderType" class="txt"/></label></div>
+		<div class="cate"><label for=""><span class="txtname">父规则ID:</span><input type="text" name="ParentRule" class="txt"/></label></div>
+		<div class="cate"><label for=""><span class="txtname">规则内容:</span><textarea rows="5" name="Contents" class="txt"></textarea></label></div>
+		<div class="cate"><label for="">
+				<span class="txtname">服务协议:</span>
+				<input type="radio" name="Protocol" value="hsf"/><span>HSF</span>
+				<input type="radio" name="Protocol" value="http"/><span>HTTP</span>
+		</label></div>
+		<div class="cate"><label for="">
+			<span class="txtname">规则分类:</span>
+			<select name="RuleType" id="" class="txt">
+				<option value="LOCAL">LOCAL</option>
+				<option value="DIRECT">DIRECT</option>
+				<option value="HSF">HSF</option>
+				<option value="TOP">TOP</option>
+				<option value="HTTP">HTTP</option>
+			</select>
+		</label></div>
+
+		<div class="cate J_json_fill"><label for="">
+			<span class="txtname">参数路径:</span>
+			<span class="txt">
+				<input type="text" class="json_key"/><span> -- </span><input type="text" class="json_value"/>
+				<button class="J_add_json">新增</button>
+			</span>			
+			<select name="paramPath" multiple size="5" class="txt show_json"></select>
+		</label></div>
+
+		<div class="cate"><label for="">
+			<span class="txtname">协议Meta:</span><textarea name="ProtocolMeta" rows="5" class="txt"></textarea>
+		</label></div>
+
+		<div class="cate J_json_fill">
+			<span class="txtname">结果映射</span>
+			<span class="txt">
+				<input type="text" class="json_key"/><span> -- </span><input type="text" class="json_value"/>
+				<button class="J_add_json">新增</button>
+			</span>
+			<select name="resultReflect" id="" class="show_json" size="5" multiple></select>
+		</div>
+
+
+		<div class="btn-zone">
+			<button class="J_submit">新增</button>
+			<button class="J_reset">重置</button>
+		</div>
+	</form>
+</div>

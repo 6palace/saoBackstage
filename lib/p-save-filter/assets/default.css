@@ -1,0 +1,26 @@
+.p-save-filter{
+	padding: 10px 0 10px 0;
+	margin: -1px 10px 10px;
+	border-top: 1px solid #BDBDBD;
+}
+
+.p-save-filter dt{
+	font-size: 14px;
+}
+.p-save-filter dd{
+	padding: 0 0 0 10px;
+	margin: 6px 0;
+}
+.p-save-filter dd span{
+	display: inline-block;
+	max-width: 130px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.p-save-filter dd b{
+	font-size: 16px;
+	cursor: pointer;
+	color: #ff0000;
+	display: inline-block;
+	vertical-align: middle;
+}

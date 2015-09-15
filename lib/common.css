@@ -1,0 +1,42 @@
+.p-h1{
+	line-height: 30px;
+	color: #333;
+	font-size: 14px;
+	background-color: #0a7bff;
+	padding: 0 0 0 10px;
+	border-bottom: 1px solid #d5d5d5;
+	
+background-color: #eaeaea;
+background-image: linear-gradient(#fafafa, #eaeaea);
+background-image: linear-gradient(#fafafa, #eaeaea);
+background-image: linear-gradient(#fafafa, #eaeaea);
+
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+	
+	
+}
+
+.go-top{
+	font-size: 20px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	bottom:20px;
+	z-index: 9;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+	-moz-transition: all 0.3s ease-out;  /* Firefox 4-15 */
+	-o-transition: all 0.3s ease-out;  /* Opera 10.50–12.00 */
+	transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+.go-top:hover{
+	text-decoration: none;
+}
+
+.go-top-display{
+	opacity: 1;
+}

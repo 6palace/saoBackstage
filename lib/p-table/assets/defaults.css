@@ -1,0 +1,145 @@
+/**
+* 公用模块：表格样式
+*/
+.p-table{
+    border-collapse:collapse;
+    background:#fff;
+    width:100%;
+}
+.p-table td:last-child{
+	width: 120px;
+	text-align: center;
+}
+.p-table th,
+.p-table td{
+    border:1px #ccc solid;
+    height:20px;
+    overflow:hidden;
+    padding:3px 5px;
+}
+.p-table tr:nth-child(odd){
+    background:#F6F7F8;
+}
+.p-table tr.hd,
+.p-table tr.hd:hover{
+    background:#eee;
+}
+.p-table tr:hover{
+    background:#ffffdd;
+}
+.p-table tr.red{
+    background:#fad0d0;
+}
+
+.p-table td .ver:before{
+	content: "\f058";
+}
+
+.p-table td .ver{
+	
+	font-family: FontAwesome;
+	display: inline-block;
+	width: 12;
+	height: 12;
+	
+	border-right-width: 4px;
+}
+.p-table td .ver-gray{
+	color : #ccc;
+}
+.p-table td .ver-gray:before{content: "\f10c";}
+
+
+.p-table td .ver-red{
+	color : #f33;
+}
+.p-table td .ver-red:before{content: "\f056";}
+
+.p-table td .ver-yellow{
+	color : #f60;
+}
+.p-table td .ver-yellow:before{content: "\f017";}
+
+
+.p-table td .ver-green{
+	color : #129a03;
+}
+
+.p-table td .ver-purple:before{content: "\f06a";}
+.p-table td .var-purple{color: #AF03FD;}
+
+
+
+
+.p-table img.logo{
+	width: 40px;
+	max-height: 40px;
+}
+
+.p-table td .ver-purple:before{content: "\f06a"}
+.p-table td .var-purple{color: #AF03FD}
+
+.p-table td .ver-del:before{content:"\f057"}
+.p-table td .var-del{color: #f33}
+
+.p-table td .ver-invalidl:before{content: "\f111";}
+.p-table td .var-invalidl{color: #ccc;}
+
+
+
+
+/*视频列表 操作区样式*/
+.p-table td .fix,
+.p-table td .publish,
+.p-table td .unpublish{
+	color: #428BCA;
+	cursor: pointer;
+}
+.p-table td .fix:hover,
+.p-table td .publish:hover,
+.p-table td .unpublish:hover{
+	text-decoration: underline;
+}
+
+/*视频源列表 操作区样式*/
+.p-table td .close,
+.p-table td .restore,
+.p-table td .freeze,
+.p-table td .unfreeze{
+	color: #428BCA;
+	cursor: pointer;
+}
+.p-table td .close:hover,
+.p-table td .restore:hover,
+.p-table td .freeze:hover,
+.p-table td .unfreeze:hover{
+	text-decoration: underline;
+}
+
+/*首页轮播图推荐*/
+.J_serial {
+	counter-reset: tt;
+}
+.J_serial th:first{
+	width: 60px;
+}
+.J_serial .serial:before{
+	content: counter(tt);
+	counter-increment: tt;
+}
+.J_serial td:first-child{
+	width: 30px;
+	text-align: center;
+}
+
+.p-table td .up,
+.p-table td .down,
+.p-table td .del{
+	color: #428BCA;
+	cursor: pointer;
+}
+.p-table td .up:hover,
+.p-table td .down:hover,
+.p-table td .del:hover{
+	text-decoration: underline;
+}

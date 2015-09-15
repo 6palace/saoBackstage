@@ -1,0 +1,16 @@
+#global-tipBox{
+    position:absolute;
+    top:-300px;
+    width:540px;
+    clear:both;
+    background:url(http://img01.taobaocdn.com/tps/i1/T1.wCNXAxeXXa94Hfd-32-32.png) no-repeat left #fff;
+    border:2px #404040 solid;
+    background-position:15px 10px;
+    padding:20px 20px 15px 60px;
+    margin:0 0 10px 0;
+    border-radius: 0 0 0px 15px;
+    left:50%;
+    margin-left:-270px;
+    position:fixed;
+    font-size:14px;
+}

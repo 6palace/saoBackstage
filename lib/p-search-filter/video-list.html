@@ -1,0 +1,46 @@
+<!--视频列表筛选 @xiaojie-->
+
+<div class="p-search-filter">
+	<fieldset class="open">
+		<legend>筛选</legend>
+		<div class="wrap">
+			<label for=""  class="discrete">
+				<span>分类ID:</span>
+				<select name="cat_id">
+					<option value="1">电影</option>
+					<option value="2">电视剧</option>
+					<option value="3">综艺</option>
+					<option value="4">动漫</option>
+				</select>
+			</label>
+
+			<label for="" class="discrete">
+				<span>剧集名称:</span>
+				<input type="text" name="" value=""/>
+			</label>
+
+			<label for="" class="discrete">
+				<span>导演:</span>
+				<input type="text" name="" value=""/>
+			</label>
+
+			<label for="" class="discrete">
+				<span>主演:</span>
+				<input type="text" name="" value=""/>
+			</label>
+
+			<button type="button" class="p-btn-blue discrete J_search-commit">搜索</button>
+
+			<!--这个是每页显示条数 默认值20 要写入value-->
+			<input type="hidden" value="20" name="page_size" />
+			<!--当前页 默认值 1 要写入value-->
+			<input type="hidden" value="1" name="page" />
+			<!--快捷搜索名称-->
+			<input type="hidden" value="" name="term_name" />
+		</div>
+	</fieldset>
+</div>
+
+<script>
+	APP.p_search_filter.init();
+</script>

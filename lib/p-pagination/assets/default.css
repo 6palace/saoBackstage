@@ -1,0 +1,26 @@
+.p-pagination{
+    margin-top:10px;
+}
+.p-pagination .goto{
+    width:20px;
+    margin:0px 3px;
+
+}
+.p-pagination .page-go {
+    width:30px;
+    cursor:pointer;
+    border: #357EBD;
+    border-radius: 3px;
+    background-color: #428BCA;
+    color: #fff;
+}
+.p-pagination .page-sum a{
+    margin-right:5px;
+}
+.p-pagination .pg .current-page,
+.p-pagination .pg .total-page{
+    text-decoration:none;
+}
+.p-pagination{
+    padding-bottom:10px;
+}
