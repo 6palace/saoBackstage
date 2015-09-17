@@ -21,3 +21,23 @@
 .m-card-control .header-zone .J_add{
 	float: right;
 }
+
+
+.J_popwin_card_add .cate{
+	margin: 10px 0;
+}
+.J_popwin_card_add input{
+	vertical-align: middle;
+}
+.J_popwin_card_add .txt{
+	display: inline;
+	width: 300px;
+}
+.J_popwin_card_add .txtname{
+	width: 80px;
+	display: inline-block;
+}
+
+.J_popwin_card_add .btn-zone{
+	text-align: right;
+}

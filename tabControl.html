@@ -44,58 +44,64 @@
 				<div class="sub-col"></div>
 
 				<div class="main-col">
-					<div class="m-card-control">
-						<h1 class="p-h1">卡片管理</h1>
+					<div class="m-service-control">
+						<h1 class="p-h1">客户端TAB管理</h1>
 						<div class="padding-wrap">
 							<div class="header-zone">
-								<button class="p-btn-blue J_add">上传卡片模板</button>
-								<div class="filter-zone">
-									<span>Render Type: </span>
-									<form action="" class="J_filter-form">
-										<input type="text" size="20"/>
-										<button class="p-btn-gray">过滤</button>
-									</form>
-								</div>
+								<button class="p-btn-blue J_add">新增TAB</button>
 							</div>
 							<div class="table-list">
 								<form action="" class="J_table-form">
 									<table class="p-table J_serial">
 										<tr class="hd">
-											<th>id</th>
-											<th>renderType</th>
-											<th>App Key</th>
-											<th>模板地址</th>
-											<th>MD5</th>
+											<th>显示中文名</th>
+											<th>显示英文名</th>
+											<th>按钮名称</th>
+											<th>按钮英文名称</th>
+											<th>服务ID</th>
+											<th>是否组合</th>
+											<th>分辨率</th>
+											<th>appkey</th>
+											<th>icon</th>
+											<th>data</th>
+											<th>权重</th>
+											<th>版本</th>
+											<th>操作</th>
 										</tr>
 										<tr>
+											<td>请将二维码/条形码放入框内</td>
+											<td>Please put the barcode/qrcode in the box</td>
+											<td>扫码</td>
+											<td>QrCode</td>
+											<td>3</td>
+											<td>0</td>
+											<td>300*300</td>
+											<td>182f4861dc2d69fadaaa264c1886668f</td>
+											<td>http://algorithm-ps.oss-cn-hangzhou.aliyuncs.com/temp/036b8c0304444a0d164c969568dd333d.png</td>
+											<td>every_frame</td>
+											<td>10</td>
 											<td>1</td>
-											<td>VIDEO</td>
-											<td>22c4185e163ff460e9557c1be753012f</td>
-											<td>http://dtc-template.oss-cn-beijing.aliyuncs.com/22c4185e163ff460e9557c1be753012f/cd_default.html</td>
-											<td>370157c76fa9c71d2dc61ac7cb505ba1</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>FACE</td>
-											<td>22c4185e163ff460e9557c1be753012f</td>
-											<td>http://dtc-template.oss-cn-beijing.aliyuncs.com/22c4185e163ff460e9557c1be753012f/cd_default.html</td>
-											<td>370157c76fa9c71d2dc61ac7cb505ba1</td>
+											<td>
+												<span class="fix">修改</span>
+												<span class="unpublish">下架</span>
+											</td>
 										</tr>
 									</table>
 								</form>
 							</div>
 						</div>
 						<script type="text/javascript">
-							APP.card_control.main.config = {
+							APP.tab_control.main.config = {
 								action: {
-									add: "uploadCard.html"
+									add: "addfixTab.html",
+									delete: "delete.html"
 								},
 								ajax: {
-									getAdd: "addCard.html"
+									getAdd: "addTab.html"
 								}
 							};
 
-							APP.card_control.main.init();
+							APP.tab_control.main.init();
 						</script>
 					</div>
 				</div>

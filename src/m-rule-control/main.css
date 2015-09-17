@@ -47,9 +47,9 @@
 }
 .J_popwin_rule_control_add .J_json_fill .show_json{
 	width: 300px;
-	margin: 10px 0px 0px 80px;
-
+	margin: 10px 0px 0px 0px;
 }
+
 .J_popwin_rule_control_add .btn-zone{
 	text-align: right;
 }

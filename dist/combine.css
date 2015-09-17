@@ -22,6 +22,26 @@
 .m-card-control .header-zone .J_add{
 	float: right;
 }
+
+
+.J_popwin_card_add .cate{
+	margin: 10px 0;
+}
+.J_popwin_card_add input{
+	vertical-align: middle;
+}
+.J_popwin_card_add .txt{
+	display: inline;
+	width: 300px;
+}
+.J_popwin_card_add .txtname{
+	width: 80px;
+	display: inline-block;
+}
+
+.J_popwin_card_add .btn-zone{
+	text-align: right;
+}
 .m-rule-control {
 	word-break: break-all;
 	word-wrap: break-word;
@@ -71,9 +91,9 @@
 }
 .J_popwin_rule_control_add .J_json_fill .show_json{
 	width: 300px;
-	margin: 10px 0px 0px 80px;
-
+	margin: 10px 0px 0px 0px;
 }
+
 .J_popwin_rule_control_add .btn-zone{
 	text-align: right;
 }
@@ -138,6 +158,29 @@
 .J_popwin_service_control_add .btn-zone{
 	text-align: right;
 }
+.m-tab-control {
+	
+}
+
+.m-tab-control .padding-wrap{
+	padding: 0 10px 10px;
+}
+
+.m-tab-control .header-zone{
+	margin: 10px 0px;
+}
+
+.m-tab-control .header-zone .filter-zone form{
+	display: inline;
+}
+
+.m-tab-control .header-zone .filter-zone span{
+	padding-right: 15px;
+}
+
+.m-tab-control .header-zone .J_add{
+	float: right;
+}
 .p-h1{
 	line-height: 30px;
 	color: #333;
@@ -179,6 +222,12 @@ border-top-right-radius: 4px;
 
 .go-top-display{
 	opacity: 1;
+}
+
+.J_reset{
+	    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+	    font-size: 100%;
+	    cursor: pointer;
 }
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
     margin: 0;

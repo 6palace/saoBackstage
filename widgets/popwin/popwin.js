@@ -74,7 +74,7 @@ define(function(require, exports, module){
 				console.log(popheight)
 				height = $('body').outerHeight();
 				scrollTop = document.body.scrollTop + document.documentElement.scrollTop;
-				wrap.css({top : ((height - popheight)/2 - 10 + scrollTop) + 'px', left : ((width - s.config.wh[0])/2)+'px'});
+				wrap.css({top : Math.max(((height - popheight)/2 - 10 + scrollTop),0) + 'px', left : ((width - s.config.wh[0])/2)+'px'});
 			}
 		},
 		_addmask : function(){

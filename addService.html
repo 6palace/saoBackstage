@@ -1,73 +1,75 @@
 <div class="J_popwin_service_control_add">
 
 	<h1 class="p-h1">新增服务</h1>
-	<form action="">
-		<div class="cate"><label for=""><span class="txtname">服务名称:</span><input name="serviceName" type="text" class="txt"></label></div>
-		<div class="cate"><label for=""><span class="txtname">服务简介:</span><textarea name="serviceIntro" class="txt" rows="5"></textarea></label></div>
-		<div class="cate"><label for=""><span class="txtname">CP:</span><input name="CP" type="text" class="txt"></label></div>
-		<div class="cate"><label for=""><span class="txtname">算法ID:</span><input name="algID" type="text" class="txt"></label></div>
-		<div class="cate"><label for="">
-				<span class="txtname">服务协议:</span>
-				<input type="radio" id="proto1" name="Protocol" value="hsf" class="protocolSelect"/><label for="proto1"><span>HSF</span></label>
-				<input type="radio" id="proto2" name="Protocol" value="http" class="protocolSelect"/><label for="proto2"><span>HTTP</span></label>
-		</label></div>
-		<div class="protocolDetail http">
-			<div class="cate">
-				<span class="txtname">HTTP:</span>
+	<div class="padding-wrap">
+		<form action="">
+			<div class="cate"><label for=""><span class="txtname">服务名称:</span><input name="serviceName" type="text" class="txt"></label></div>
+			<div class="cate"><label for=""><span class="txtname">服务简介:</span><textarea name="serviceIntro" class="txt" rows="5"></textarea></label></div>
+			<div class="cate"><label for=""><span class="txtname">CP:</span><input name="CP" type="text" class="txt"></label></div>
+			<div class="cate"><label for=""><span class="txtname">算法ID:</span><input name="algID" type="text" class="txt"></label></div>
+			<div class="cate"><label for="">
+					<span class="txtname">服务协议:</span>
+					<input type="radio" id="proto1" name="Protocol" value="hsf" class="protocolSelect"/><label for="proto1"><span>HSF</span></label>
+					<input type="radio" id="proto2" name="Protocol" value="http" class="protocolSelect"/><label for="proto2"><span>HTTP</span></label>
+			</label></div>
+			<div class="protocolDetail http">
+				<div class="cate">
+					<span class="txtname">HTTP:</span>
+				</div>
+				<div class="cate"><label for=""><span class="txtname">URL:</span><input name="http-Url" type="text" class="txt" /></label></div>
+				<div class="cate J_json_fill">
+					<span class="txtname">参数路径:</span>
+					<span class="txt">
+						<input type="text" class="json_key"/><span> -- </span><input type="text" class="json_value"/>
+						<button class="J_add_json">新增</button>
+					</span>
+					<button class="J_delete_json" action="http-ParamPath">删除选择</button>
+					<select name="http-ParamPath" id="http-ParamPath" class="show_json" size="5" multiple></select>
+				</div>
 			</div>
-			<div class="cate"><label for=""><span class="txtname">URL:</span><input name="http-Url" type="text" class="txt" /></label></div>
-			<div class="cate J_json_fill">
-				<span class="txtname">参数路径:</span>
-				<span class="txt">
-					<input type="text" class="json_key"/><span> -- </span><input type="text" class="json_value"/>
-					<button class="J_add_json">新增</button>
-				</span>
-				<button class="J_delete_json" action="http-ParamPath">删除选择</button>
-				<select name="http-ParamPath" id="http-ParamPath" class="show_json" size="5" multiple></select>
+			<div class="cate protocolDetail hsf">
+				<div class="cate">
+					<span class="txtname">HSF:</span>
+				</div>
+				<div class="cate J_json_fill J_json_fill_indexed">
+					<span class="txtname">参数路径:</span>
+					<span class="txt">
+						<input type="text" size="2" class="json_index"><input type="text" size="15" class="json_key"/><span> -- </span><input type="text" size="15" class="json_value"/>
+						<button class="J_add_json">新增</button>
+					</span>
+					<button class="J_delete_json" action="hsf-ParamPath">删除选择</button>
+					<select name="hsf-ParamPath" id="hsf-ParamPath" class="show_json" size="5" multiple></select>
+				</div>
+				<div class="cate J_json_fill">
+					<span class="txtname">ParamKeys:</span>
+					<span class="txt">
+						<input type="text" class="json_key"/><span> -- </span><input type="text" class="json_value"/>
+						<button class="J_add_json">新增</button>
+					</span>
+					<button class="J_delete_json" action="hsf-ParamKeys">删除选择</button>
+					<select name="hsf-ParamKeys" id="hsf-ParamKeys" class="show_json" size="5" multiple></select>
+				</div>
 			</div>
-		</div>
-		<div class="cate protocolDetail hsf">
-			<div class="cate">
-				<span class="txtname">HSF:</span>
-			</div>
-			<div class="cate J_json_fill J_json_fill_indexed">
-				<span class="txtname">参数路径:</span>
-				<span class="txt">
-					<input type="text" size="2" class="json_index"><input type="text" size="15" class="json_key"/><span> -- </span><input type="text" size="15" class="json_value"/>
-					<button class="J_add_json">新增</button>
-				</span>
-				<button class="J_delete_json" action="hsf-ParamPath">删除选择</button>
-				<select name="hsf-ParamPath" id="hsf-ParamPath" class="show_json" size="5" multiple></select>
-			</div>
-			<div class="cate J_json_fill">
-				<span class="txtname">ParamKeys:</span>
-				<span class="txt">
-					<input type="text" class="json_key"/><span> -- </span><input type="text" class="json_value"/>
-					<button class="J_add_json">新增</button>
-				</span>
-				<button class="J_delete_json" action="hsf-ParamKeys">删除选择</button>
-				<select name="hsf-ParamKeys" id="hsf-ParamKeys" class="show_json" size="5" multiple></select>
-			</div>
-		</div>
-		<div class="cate"><label for=""><span class="txtname">协议Meta:</span><textarea class="txt"></textarea></label></div>
-		<div class="cate"><label for=""><span class="txtname">超时时间</span><input type="text" class="txt"></label></div>
-		<div class="cate"><label for="">
-				<span class="txtname">复合卡片:</span>
-				<input type="radio" name="combineCard" /><span>是</span>
-				<input type="radio" name="combineCard" /><span>否</span>
-		</label></div>
-		<div class="cate"><label for=""><span class="txtname">Render Type:</span><input type="text" class="txt"></label></div>
-		<div class="cate"><label for=""><span class="txtname">Globalld path</span><input type="text" class="txt"></label></div>
-		<div class="cate"><label for="">
-			<span class="txtname">环境</span>
-			<select name="environment" class="txt">
-					<option value="online">线上</option>
-					<option value="offline">预发</option>
-			</select>
-		</label></div>
+			<div class="cate"><label for=""><span class="txtname">协议Meta:</span><textarea class="txt"></textarea></label></div>
+			<div class="cate"><label for=""><span class="txtname">超时时间</span><input type="text" class="txt"></label></div>
+			<div class="cate"><label for="">
+					<span class="txtname">复合卡片:</span>
+					<input type="radio" name="combineCard" value="1"/><span>是</span>
+					<input type="radio" name="combineCard" value="0"/><span>否</span>
+			</label></div>
+			<div class="cate"><label for=""><span class="txtname">Render Type:</span><input type="text" class="txt" name="renderType"></label></div>
+			<div class="cate"><label for=""><span class="txtname">Globalld path</span><input type="text" class="txt" name-"globalldPath"></label></div>
+			<div class="cate"><label for="">
+				<span class="txtname">环境</span>
+				<select name="environment" class="txt">
+						<option value="online">线上</option>
+						<option value="offline">预发</option>
+				</select>
+			</label></div>
+		</form>
 		<div class="btn-zone">
 			<button class="J_submit">新增</button>
-			<button class="J_reset">重置</button>
+			<button type="reset" class="J_reset" >重置</button>
 		</div>
-	</form>
+	</div>
 </div>

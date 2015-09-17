@@ -40,3 +40,9 @@ border-top-right-radius: 4px;
 .go-top-display{
 	opacity: 1;
 }
+
+.J_reset{
+	    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+	    font-size: 100%;
+	    cursor: pointer;
+}

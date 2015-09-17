@@ -8,6 +8,7 @@ function router(a, b) {
 }
 var url = require("url"), fs = require("fs"), path = require("path"), ejs = require("ejs"), resourceFile = require("./resourceFile"), reg_search = /([^\?]*\?\?[^\?]*)(\?($|[^\?]+))/gi, utf = require("is-utf8"), query = require("querystring"), json404, out404 = function (a) {
     json404 = {acc: "url有误"}, fs.readFile("../html/error404.ejs", {encoding: "utf-8"}, function (b, c) {
+        console.log("hello");
         a.writeHead(200, {"Content-Type": "text/html;charset=utf-8"}), a.end(ejs.render(c, json404))
     })
 }, analyzeCombineUrl = function (a) {

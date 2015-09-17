@@ -1,16 +1,15 @@
 (function(){
-	var A = $.NM('card_control', 'main');
+	var A = $.NM('tab_control', 'main');
 
 	A.main.init = function(){
-		addCard();
+		addTab();
 	};
 
-	function addCard(){
-		var addBtn = $('.m-card-control .J_add');
+	function addTab(){
+		var addBtn = $('J_popwin_tab_add');
 
 		function addFn(e){
-			console.log("what");
-			$.ajax(A.main.config.ajax.getAdd, {
+			$.ajax(A.main.config.ajax.getMsg, {
 				data : {
 					id : ''
 				},
@@ -24,20 +23,17 @@
 							content: data
 						});
 						pop.ev.bind('afterinsert', function (e, node) {
-							var reset = $('.J_reset', node.node),
+							var cancel = $('.J_reset', node.node),
 								submit = $('.J_submit', node.node),
 								form = $('form', node.node);
 
 
-							upload(form);
-
 							//TODO unconfirmed interaction with server
 							function submitFn() {
-
 								seajs.use('upload', function (u) {
 									new u.Upload({
 										form: form,
-										action: A.main.config.action.add,
+										action: A.main.config.action.addAndFix,
 										callback: function (data, node) {
 											if (data.success === true) {
 												location.reload();
@@ -49,15 +45,13 @@
 								});
 							}
 
-
 							submit.on('click', submitFn);
 
-							function resetFn() {
-								e.preventDefault();
-								form[0].reset();
+							function cancelFn() {
+								pop.close();
 							}
 
-							reset.on('click', resetFn);
+							cancel.on('click', cancelFn);
 						});
 						pop.init();
 					})
@@ -72,7 +66,4 @@
 	function upload(){
 		//TODO
 	}
-
-	
-
 })();

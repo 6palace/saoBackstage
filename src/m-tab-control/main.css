@@ -1,0 +1,23 @@
+.m-tab-control {
+	
+}
+
+.m-tab-control .padding-wrap{
+	padding: 0 10px 10px;
+}
+
+.m-tab-control .header-zone{
+	margin: 10px 0px;
+}
+
+.m-tab-control .header-zone .filter-zone form{
+	display: inline;
+}
+
+.m-tab-control .header-zone .filter-zone span{
+	padding-right: 15px;
+}
+
+.m-tab-control .header-zone .J_add{
+	float: right;
+}
