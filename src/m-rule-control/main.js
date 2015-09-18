@@ -42,7 +42,7 @@
 								seajs.use('upload', function (u) {
 									new u.Upload({
 										form: form,
-										action: A.main.config.action.addAndFix,
+										action: A.main.config.action.add,
 										callback: function (data, node) {
 											if (data.success === true) {
 												location.reload();
@@ -126,7 +126,7 @@
 							seajs.use('upload', function (u) {
 								new u.Upload({
 									form: form,
-									action: A.main.config.action.addAndFix,
+									action: A.main.config.action.add,
 									callback: function (data, node) {
 										if (data.success === true) {
 											location.reload();

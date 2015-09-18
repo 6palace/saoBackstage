@@ -43,7 +43,7 @@
 										$(this).children().attr("selected", true);
 									}
 								});
-								
+
 								//复合卡片false时，renderType是必选
 								if($(".J_popwin_service_control_add input[name='combineCard']:checked").val() === "0" &&
 									$(".J_popwin_service_control_add input[name='renderType']").val() == ''){
@@ -52,7 +52,7 @@
 									seajs.use('upload', function (u) {
 										new u.Upload({
 											form: form,
-											action: A.main.config.action.addAndFix,
+											action: A.main.config.action.add,
 											callback: function (data, node) {
 												if (data.success === true) {
 													location.reload();
@@ -133,7 +133,7 @@
 							seajs.use('upload', function (u) {
 								new u.Upload({
 									form: form,
-									action: A.main.config.action.addAndFix,
+									action: A.main.config.action.add,
 									callback: function (data, node) {
 										if (data.success === true) {
 											location.reload();
